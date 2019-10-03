@@ -63,27 +63,41 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* Your code starts here! */
 
 .container {
-	width: 1000px;
+	width: 900px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
+}
+
+.container ul
+{
+    list-style: initial;
+    margin: initial;
+    padding: 0 0 0 20px;
+}
+
+.container li
+{
+    display: list-item;
+    line-height: 2;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 90px;
 }
 
 header nav{
     display: flex;
-    width: 700px;
+    width: 650px;
     justify-content: space-between;
 
 }
@@ -113,7 +127,7 @@ header nav a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 0;
-    border: 3px solid red;
+    border-bottom: 2px solid black;
     justify-content: space-between;
     
 }
@@ -141,4 +155,21 @@ button {
 button:hover {
     background: black;
     color: white;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.facts {
+    width: 400px;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
 }
